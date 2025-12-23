@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Solutions | Digital Agency</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <h2 class="logo">IT Solutions</h2>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Grow Your Business with Smart IT Solutions</h1>
+  <p>Web Development • Digital Marketing • Software Solutions</p>
+  <button onclick="scrollToSection('#services')">Our Services</button>
+  <button onclick="scrollToSection('#contact')">Contact Us</button>
+</section>
+
+<!-- Services -->
+<section id="services" class="section services-section">
+  <h2>Our Services</h2>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <i class="fa-solid fa-code"></i>
+      <h3>Web Development</h3>
+      <p>Professional, responsive websites for all businesses.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-palette"></i>
+      <h3>UI / UX Design</h3>
+      <p>Clean, modern & user-friendly designs.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-chart-line"></i>
+      <h3>Digital Marketing</h3>
+      <p>SEO, social media & online brand growth.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-laptop-code"></i>
+      <h3>Software Solutions</h3>
+      <p>Custom software tailored to your business needs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="section">
+  <h2>Our Work</h2>
+  <p>Sample projects & business solutions delivered by IT Solutions</p>
+
+  <div class="portfolio-grid">
+    <div class="portfolio-item">Business Website</div>
+    <div class="portfolio-item">E-commerce Store</div>
+    <div class="portfolio-item">Company Dashboard</div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+  <h2>About IT Solutions</h2>
+  <p>
+    IT Solutions is a digital service provider helping startups and businesses
+    build strong online presence using modern technologies and smart strategies.
+  </p>
+</section>
+
+<!-- Contact -->
+<form class="contact-form" id="contact-form">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+<!-- Footer -->
+<footer>
+  <p>© 2025 IT Solutions. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<a href="https://wa.me/919324759637?text=Hello%20IT%20Solutions,%20I%20am%20interested%20in%20your%20services." 
+   class="whatsapp-float" 
+   target="_blank">
+   <i class="fa-brands fa-whatsapp"></i>
+</a>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("CnHLqzNUUuTxzRO3s");
+})();
+</script>
+</body>
+</html>
